@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="title">
+            <h2>BMI Calculator</h2>
+        </div>
+
+        <div class="calculator">
+        <h3>Enter Your Data</h3>
+        </div>
+
+        <form>
+            <div class="weight">
+                <label for="weight">Weight (kg)</label>
+                <input class="input-w" type="number" id="weight" min="0" step="0.01" value="0" />
+             </div>
+
+            <div class="height">
+                <label for="height">Height (cm)</label>
+                <input class="input-h" type="number" id="height" min="0" step="0.01" value="0" />
+            </div>
+
+            <div>
+                <button type="reset" class="button-reset">Reset</button>
+                <button type="submit" class="button-submit">Submit</button>
+            </div>
+        </form>
+         
+        <section class="output">
+            <h4>Your BMI is</h4>
+            <p id="bmi">0</p>
+            <p id="desc">N/A</p>
+        </section>
+        <section class="bmi-scale">
+            <div style="--color: var(--underweight)">
+                <h4>Underweight</h4>
+                <p>&lt; 18.5</p>
+            </div>
+            <div style="--color: var(--normal)">
+                <h4>Normal</h4>
+                <p>18.5 - 25</p>
+            </div>
+            <div style="--color: var(--overweight)">
+                <h4>Overweight</h4>
+                <p>25 - 30</p>
+            </div>
+            <div style="--color: var(--obese)">
+                <h4>Obese</h4>
+                <p>30 &lt;</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

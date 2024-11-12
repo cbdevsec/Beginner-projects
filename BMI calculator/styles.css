@@ -1,0 +1,118 @@
+:root{
+    --underweight: orange;
+    --normal: green;
+    --overweight: lightcoral;
+    --obese: crimson;
+}
+html {
+    background-color: #e4e4e4;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+.container {
+    width: 100%;
+    background-color: #242424;
+    padding: 30px;
+    border-radius: 2rem;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 10px 15px #0a0a0a;
+}
+h2{
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+}
+.button-submit{ 
+    background-color: #83e1f1;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 1rem;
+    color: #202020;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #505050;
+}
+.button-submit:hover{
+    cursor: pointer;
+    background-color: #b5dee6;
+}
+.button-reset{ 
+    background-color: #e64242;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #505050;
+}
+.button-reset:hover{
+    cursor: pointer;
+    background-color: #e28d8d;
+}
+.weight{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.input-w{
+    color: #ffff;
+    font-size: 1.25rem;
+    border: 1px solid #bdbdbd;
+    flex: 1;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 6px;
+    background-color: #242424;
+}
+.height{
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+.input-h{
+    color: #ffff;
+    font-size: 1.25rem;
+    border: 1px solid #bdbdbd;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 6px;
+    background-color: #242424;
+}
+.output {
+    text-align: center;
+}
+.output #bmi {
+    font-size: 2.6rem;
+    font-weight: bolder;
+}
+.output #desc strong {
+    text-transform: uppercase;
+}
+.bmi-scale{
+    display: flex;
+}
+.bmi-scale h4{
+    font-size: 0.75rem;
+    color: #a3a3a3;
+}
+.bmi-scale p{
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+.bmi-scale div {
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 5px solid var(--color);
+}
+h4{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+}
